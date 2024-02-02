@@ -12,7 +12,7 @@ class ChatsList extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final chatsList = ref.watch(getAllChatsProvider);
-    final myUid = FirebaseAuth.instance.currentUser!.uid;
+    final myUid = FirebaseAuth.instance.currentUser?.uid;
 
     return chatsList.when(
       data: (chats) {

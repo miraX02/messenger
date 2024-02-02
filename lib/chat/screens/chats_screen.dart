@@ -51,7 +51,7 @@ class _ChatsScreenState extends ConsumerState<ChatsScreen> {
         children: [
           const SizedBox(width: 5),
           const Text(
-            'Chats',
+            'Чаты',
             style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.bold,
@@ -75,7 +75,7 @@ class _ChatsScreenState extends ConsumerState<ChatsScreen> {
               child: TextField(
                 decoration: const InputDecoration(
                   border: InputBorder.none,
-                  hintText: 'Search',
+                  hintText: 'поиск',
                   hintStyle: TextStyle(),
                 ),
               ),

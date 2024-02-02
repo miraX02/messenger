@@ -102,23 +102,6 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
                   );
             },
           ),
-          IconButton(
-            icon: const Icon(
-              FontAwesomeIcons.video,
-              color: AppColors.messengerDarkGrey,
-              size: 20,
-            ),
-            onPressed: () async {
-              final video = await pickVideo();
-              if (video == null) return;
-              await ref.read(chatProvider).sendFileMessage(
-                    file: video,
-                    chatroomId: chatroomId,
-                    receiverId: widget.userId,
-                    messageType: 'video',
-                  );
-            },
-          ),
           Expanded(
             child: Container(
               height: 40,
@@ -129,7 +112,7 @@ class _ChatScreenState extends ConsumerState<ChatScreen> {
               child: TextField(
                 controller: messageController,
                 decoration: const InputDecoration(
-                  hintText: 'Aa',
+                  hintText: 'Сообщение',
                   hintStyle: TextStyle(),
                   border: InputBorder.none,
                   contentPadding: EdgeInsets.only(
