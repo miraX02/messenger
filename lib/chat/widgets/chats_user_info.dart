@@ -25,7 +25,7 @@ class ChatUserInfo extends ConsumerWidget {
           children: [
             CircleAvatar(
               radius: 20,
-              backgroundImage: ,
+              child: Text(''),
             ),
             const SizedBox(width: 10),
             Column(
