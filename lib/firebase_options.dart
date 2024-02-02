@@ -8,8 +8,6 @@ class DefaultFirebaseOptions {
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
         return android;
-      case TargetPlatform.iOS:
-        return ios;
       default:
         throw UnsupportedError(
           'DefaultFirebaseOptions are not supported for this platform.',
@@ -18,20 +16,10 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyC-UQrx582MIQFWOGNN9tfAr0nkDnd6nTU',
-    appId: '1:852788491165:android:028cbd7bbabeadc36ab574',
+    apiKey: '2BmNSG7Sv31zDZpZqm5X',
+    appId: 'saD4IwxSMWWFwXFGAqHa',
     messagingSenderId: '589570799962',
-    projectId: 'facebook-clone-d35c7',
-    storageBucket: 'facebook-clone-d35c7.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCfo70UUsJFiVjiOun5GYDDip-VMkO5hXE',
-    appId: '1:852788491165:ios:2d64d7d926f8ad576ab574',
-    messagingSenderId: '589570799962',
-    projectId: 'facebook-clone-d35c7',
-    storageBucket: 'facebook-clone-d35c7.appspot.com',
-    iosClientId: '852788491165-7pgkn1471rha752r17gmp13bujhj186n.apps.googleusercontent.com',
-    iosBundleId: 'com.codehq.facebookClone',
+    projectId: 'messeger',
+    storageBucket: 'messeger',
   );
 }
