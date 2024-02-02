@@ -83,7 +83,6 @@ class ChatTile extends ConsumerWidget {
                     ],
                   ),
                 ),
-                // Message status
                 const Padding(
                   padding: EdgeInsets.only(left: 10),
                   child: Icon(
